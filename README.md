@@ -25,7 +25,7 @@
 
 2. Navigate into the project directory:
    ```bash
-   cd atopes-fireworks-project
+   cd fireworks
    ```
 
 3. Install dependencies:
