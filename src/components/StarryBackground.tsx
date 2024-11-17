@@ -12,27 +12,27 @@ const StarryBackground = () => {
         left: 0,
         width: "100%",
         height: "100%",
-        pointerEvents: "none", // Prevent blocking interactions
-        backgroundColor: "transparent", // Add for debugging (change to 'blue' to verify visibility)
+        pointerEvents: "none",
+        backgroundColor: "transparent",
       }}
-      camera={{ position: [0, 0, 5], fov: 60 }}
+      camera={{ position: [0, 0, 10], fov: 75 }}
     >
-      {/* Stars: Ensure they are visible */}
+      {/* Enhanced Stars */}
       <Stars
-        radius={100}
-        depth={50}
-        count={5000} // Reduced count for debugging performance
-        factor={4}
-        saturation={0}
-        fade={true}
-        speed={1}
+        radius={200} // Broader starfield radius
+        depth={80} // Increased depth for layering effect
+        count={10000} // Higher star density for immersive look
+        factor={7} // Bigger and more dramatic stars
+        saturation={0.8} // Vibrant star colors for visual appeal
+        fade={true} // Fade effect for realistic depth
+        speed={0.8} // Smooth shimmer speed
       />
 
-      {/* Optional: OrbitControls for interactive testing */}
+      {/* Smooth Auto-Rotate */}
       <OrbitControls
         enableZoom={false}
         autoRotate={true}
-        autoRotateSpeed={0.3}
+        autoRotateSpeed={0.1} // Ultra-smooth and slow rotation
       />
     </Canvas>
   );

@@ -14,7 +14,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {/* Debug: Wrapper for starry background */}
         <div
           className="fixed inset-0 z-[-1]" // Ensure it sits behind everything else
-          style={{ backgroundColor: "black" }} // Black background for contrast
         >
           <StarryBackground />
         </div>

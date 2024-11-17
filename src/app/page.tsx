@@ -38,7 +38,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative min-h-screen bg-black text-white overflow-hidden">
+    <div className="relative min-h-screen text-white overflow-hidden">
       {/* Fireworks container */}
       <div
         id="fireworks-container"
